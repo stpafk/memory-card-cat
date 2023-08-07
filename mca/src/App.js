@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import './App.css'
 import Header from './components/Header'
-import CardHandler from './components/Card'
+import CardHandler from './components/CardHandler'
 
 export default function App() {
 
