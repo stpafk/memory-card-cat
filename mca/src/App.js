@@ -12,7 +12,7 @@ export default function App() {
         if (score >= highScore) {
             setHighScore(score);
         }
-    })
+    }, [score, highScore, setScore])
 
     return(
         <>
