@@ -2,7 +2,7 @@
 const Cats = [
     {
         id: 0,
-        src: ".,/assets/-siam.jpeg",
+        src: "../assets/-siam.jpeg",
         name: "Siamese",
         clicked: false,
     },

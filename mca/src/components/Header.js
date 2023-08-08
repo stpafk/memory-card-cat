@@ -1,7 +1,6 @@
 //import { useState, useEffect } from 'react'
-import "../styles/style.css"
 
-function Header(score, highScore) {
+function Header({score, highScore}) {
 
     return(
         <div className='r display-score'>
