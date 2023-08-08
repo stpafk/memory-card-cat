@@ -1,14 +1,14 @@
 import Cats from "../views/Cats";
 import { useState } from "react";
 import Card from "../views/Card";
-import uuid from 'react-uuid'
+//import uuid from 'react-uuid'
 
 function CardMain({score, highScore, setScore, setHighScore}) {
 
     const [catCards, setCards] = useState(Cats);
 
     function reset() {
-        alert("game was reseted" )
+        
         setCards(
             catCards.map((cat) => {
                 cat.clicked = false;
@@ -17,8 +17,19 @@ function CardMain({score, highScore, setScore, setHighScore}) {
         );
     };
 
-    function randomize() {
-        return;
+    const randomize = () => {
+        
+        function shuffle(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * ( i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr
+        }
+
+        const shuffleCards = shuffle(catCards);
+        setCards(shuffleCards);
+
     };
 
     function handleScore(action) {
@@ -35,6 +46,7 @@ function CardMain({score, highScore, setScore, setHighScore}) {
 
     function handleClick(id) {
         let clickedCard = catCards.filter((cat) => cat.id === id)[0];
+        randomize();
         if (clickedCard.clicked) {
             handleScore("clicked");
             reset();
@@ -42,15 +54,8 @@ function CardMain({score, highScore, setScore, setHighScore}) {
         };
 
         clickedCard.clicked = true;
-        handleScore("not clicked")
+        handleScore("not clicked");
         
-        setCards(catCards.map((card) => {
-            if (card.id === clickedCard.id) {
-                return clickedCard;
-            }
-
-            return card;
-        }))
     };
 
     return(
