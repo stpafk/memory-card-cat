@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import CardMain from './components/CardMain';
+import Footer from './components/Footer';
 import "./style.css"
 
 export default function App() {
@@ -16,15 +17,18 @@ export default function App() {
 
     return(
         <>
-        <div className="mc header">
+        <header className="mc header">
             <Header score={score} highScore={highScore}/>
-        </div>
+        </header>
         <div className="mc main">
             <CardMain  score={score} 
             highScore={highScore}  
             setScore={setScore}
             setHighScore={setHighScore}/>
         </div>
+        <footer>
+            <Footer />
+        </footer>
         </>
     )
 
