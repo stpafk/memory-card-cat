@@ -15,6 +15,7 @@ function CardMain({score, highScore, setScore, setHighScore}) {
                 return cat;
             })
         );
+        randomize();
     };
 
     const randomize = () => {
