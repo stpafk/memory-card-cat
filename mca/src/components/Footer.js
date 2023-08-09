@@ -3,9 +3,11 @@ function Footer() {
 
     return(
         <div className="f center div">
-            <p className="f text">Created by</p>
-            <a className="gh ref" href="https://github.com/stpafk">stpafk</a>
-            <img className="gh img" src="https://avatars.githubusercontent.com/u/117909784?s=40&v=4" alt="stpafk"></img>
+            <p className="f text">Created by Stephan A. W</p>
+            <a className="gh img" href="https://github.com/stpafk">
+                <img src="https://avatars.githubusercontent.com/u/117909784?s=40&v=4"
+                alt="stpafk"></img>
+            </a>
         </div>
     )
 
