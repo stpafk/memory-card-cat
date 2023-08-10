@@ -46,8 +46,16 @@ function CardMain({score, highScore, setScore, setHighScore}) {
     }
 
     function handleClick(id) {
+
         let clickedCard = catCards.filter((cat) => cat.id === id)[0];
+
         randomize();
+
+        if (catCards.filter((cat) => cat.clicked === false)
+            .length === 0) {
+                reset();
+            };
+
         if (clickedCard.clicked) {
             handleScore("clicked");
             reset();
