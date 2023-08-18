@@ -46,6 +46,19 @@ header {
     margin: 0 233px;
 }
 
+@media (max-width:480px) {
+    .mc.header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .r.display.score {
+        margin-left: 0;
+        position: relative;
+        float: right;
+    }
+}
+
 .main.card {
     overflow-anchor: none;
     background-color: var(--bg-color);
@@ -119,7 +132,6 @@ footer {
     .mc.main {
         margin: 0 20px;
     }
-
 
     .main.card {
         display: grid;
