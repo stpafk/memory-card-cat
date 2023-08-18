@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/memory-card-cat/static/css/main.4830a6b2.css",
+    "main.js": "/memory-card-cat/static/js/main.620c190f.js",
+    "static/media/bg-image-paw-transformed.png": "/memory-card-cat/static/media/bg-image-paw-transformed.298accf3851d385148ce.png",
+    "index.html": "/memory-card-cat/index.html",
+    "main.4830a6b2.css.map": "/memory-card-cat/static/css/main.4830a6b2.css.map",
+    "main.620c190f.js.map": "/memory-card-cat/static/js/main.620c190f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4830a6b2.css",
+    "static/js/main.620c190f.js"
+  ]
+}
