@@ -138,5 +138,6 @@ footer {
         grid-template-rows: repeat(8, 1fr);
         grid-template-columns: 1fr;
         gap: 0;
+        
     }
 }
